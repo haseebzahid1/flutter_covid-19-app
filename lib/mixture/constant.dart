@@ -1,22 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_covid_19_app/mixture/size.dart';
 
-const kPrimaryColor = Color(0xFFFF7643);
-const kPrimaryLightColor = Color(0xFFFFECDF);
-const kPrimaryGradientColor = LinearGradient(
-  begin: Alignment.topLeft,
-  end: Alignment.bottomRight,
-  colors: [Color(0xFFFFA53E), Color(0xFFFF7643)],
+const kBackgroundColor = Color(0xFFFEFEFE);
+const kTitleTextColor = Color(0xFF303030);
+const kBodyTextColor = Color(0xFF4B4B4B);
+const kTextLightColor = Color(0xFF959595);
+const kInfectedColor = Color(0xFFFF8748);
+const kDeathColor = Color(0xFFFF4848);
+const kRecovercolor = Color(0xFF36C12C);
+const kPrimaryColor = Color(0xFF3382CC);
+final kShadowColor = Color(0xFFB7B7B7).withOpacity(.16);
+final kActiveShadowColor = Color(0xFF4056C6).withOpacity(.15);
+
+// Text Style
+const kHeadingTextStyle = TextStyle(
+  fontSize: 22,
+  fontWeight: FontWeight.w600,
 );
-const kSecondaryColor = Color(0xFF979797);
-const kTextColor = Color(0xFF757575);
 
-const kAnimationDuration = Duration(milliseconds: 200);
+const kSubTextStyle = TextStyle(fontSize: 16, color: kTextLightColor);
 
-
-final headingStyle = TextStyle(
-  fontSize: getProportionateScreenWidth(20),
+const kTitleTextstyle = TextStyle(
+  fontSize: 18,
+  color: kTitleTextColor,
   fontWeight: FontWeight.bold,
-  color: Colors.black,
-  height: 1.5,
 );
